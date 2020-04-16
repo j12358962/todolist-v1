@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const lodash = require('lodash');
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/todolistDB', {
+mongoose.connect('mongodb+srv://admin-jeff:abcde389624@cluster0-vobpw.mongodb.net/todolistDB', {
   useNewUrlParser: true
 });
 
@@ -74,7 +74,6 @@ app.get("/", function(req, res) {
       });
     }
     results.forEach(function(result) {
-      console.log(result);
     });
 
 
